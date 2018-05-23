@@ -1,0 +1,375 @@
+/* Ferris wheel */
+
+.ferris {
+    position: absolute;
+    bottom: 0;
+    left: 520px;
+
+    width: 340px;
+    height: 462px;
+    border: 1px solid #F69EAC;
+}
+.ferris-base-1 {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 16px;
+    border-radius: 8px;
+
+    background: #BF6872
+}
+.ferris-base-2 {
+    position: absolute;
+    bottom: 16px;
+    left: 30px;
+
+    width: calc(100% - 60px);
+    height: 16px;
+    border-radius: 8px;
+
+    background: #F69EAC
+}
+.ferris-stand-1 {
+    position: absolute;
+    bottom: 32px;
+    left: 60px;
+    transform-origin: 0 100%;
+    transform: skew(-16deg);
+
+    width: 35px;
+    border-bottom: 220px solid #FAF4A8;
+    border-left: 25px solid transparent;
+}
+.ferris-stand-2 {
+    position: absolute;
+    right: 60px;
+    bottom: 32px;
+    transform-origin: 0 100%;
+    transform: skew(16deg);
+
+    width: 35px;
+    border-bottom: 220px solid #C6C49E;
+    border-right: 25px solid transparent;
+}
+
+.ferris-wheel-set {
+    position: absolute;
+    bottom: 100px;
+    left: -10px;
+
+    width: 360px;
+    height: 360px;
+    border: 1px solid rgba(241, 106, 131, 0.5);
+    border-radius: 50%;
+}
+.ferris-wheel-outer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    border-top: 25px solid #F16A83;
+    border-right: 25px solid #BF6872;
+    border-bottom: 25px solid #BF6872;
+    border-left: 25px solid #F16A83;
+    border-radius: 50%;
+}
+
+.ferris-outer-spinner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: outer-spinner 10s linear infinite;
+}
+.ferris-outer-spinner-axle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    background-color: #F69EAC;
+}
+.ferris-wheel-axle-right {
+    position: absolute;
+    left: 50%;
+    transform-origin: 0 center;
+    transform: rotate(45deg);
+
+    width: 25px;
+    height: 50px;
+    border-radius: 0 25px 25px 0;
+    background-color: #BF6872;
+}
+.ferris-large-spoke {
+    position: absolute;
+    left: calc(50% - 1px);
+    transform-origin: center 179px;
+    transform: rotate(36deg);
+    
+    width: 1px;
+    height: calc(100% - 100px);
+
+    background-color: #c38f98;
+}
+.ferris-large-spoke:nth-of-type(2) {
+    transform: rotate(calc(2 * 36deg));
+}
+.ferris-large-spoke:nth-of-type(3) {
+    transform: rotate(calc(3 * 36deg));
+}
+.ferris-large-spoke:nth-of-type(4) {
+    transform: rotate(calc(4 * 36deg));
+}
+.ferris-large-spoke:nth-of-type(5) {
+    transform: rotate(calc(5 * 36deg));
+}
+.ferris-large-spoke:nth-of-type(6) {
+    transform: rotate(calc(6 * 36deg));
+}
+.ferris-large-spoke:nth-of-type(7) {
+    transform: rotate(calc(7 * 36deg));
+}
+.ferris-large-spoke:nth-of-type(8) {
+    transform: rotate(calc(8 * 36deg));
+}
+.ferris-large-spoke:nth-of-type(9) {
+    transform: rotate(calc(9 * 36deg));
+}
+.ferris-large-spoke:nth-of-type(10) {
+    transform: rotate(calc(10 * 36deg));
+}
+.ferris-cabin-pivot {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background-color: red;
+    animation: cabin 10s linear infinite reverse;
+}
+.ferris-cabin {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: center top;
+
+    width: 50px;
+    height: 55px;
+    /* background-color: red; */
+}
+.ferris-cabin-1 {
+    transform: translateX(-50%) rotate(-36deg);
+}
+.ferris-cabin-2 {
+    transform: translateX(-50%) rotate(calc(2 * -36deg));
+}
+.ferris-cabin-3 {
+    transform: translateX(-50%) rotate(calc(3 * -36deg));
+}
+.ferris-cabin-4 {
+    transform: translateX(-50%) rotate(calc(4 * -36deg));
+}
+.ferris-cabin-5 {
+    transform: translateX(-50%) rotate(calc(5 * -36deg));
+}
+.ferris-cabin-6 {
+    transform: translateX(-50%) rotate(calc(6 * -36deg));
+}
+.ferris-cabin-7 {
+    transform: translateX(-50%) rotate(calc(7 * -36deg));
+}
+.ferris-cabin-8 {
+    transform: translateX(-50%) rotate(calc(8 * -36deg));
+}
+.ferris-cabin-9 {
+    transform: translateX(-50%) rotate(calc(9 * -36deg));
+}
+.ferris-cabin-10 {
+    transform: translateX(-50%) rotate(calc(10 * -36deg));
+}
+
+.ferris-cabin-base {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    border-top: 30px solid #FDF164;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+.ferris-cabin-base-right {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    width: 25px;
+    border-top: 30px solid #C5C072;
+    border-right: 10px solid transparent;
+}
+.ferris-cabin-hanger {
+    position: absolute;
+    bottom: 5px;
+    transform: rotate(-45deg);
+
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+
+    border: 5px solid transparent;
+    border-top-color: #FDF164;
+    border-right-color: #C5C072;
+}
+
+.ferris-inner-spinner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: outer-spinner 10s linear infinite reverse;
+}
+.ferris-small-spoke {
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    
+    width: 1px;
+    height: calc(100% - 90px);
+}
+.ferris-small-spoke:nth-of-type(1) {
+    transform: rotate(12deg);
+}
+.ferris-small-spoke:nth-of-type(2) {
+    transform: rotate(calc(2 * 12deg));
+}
+.ferris-small-spoke:nth-of-type(3) {
+    transform: rotate(calc(3 * 12deg));
+}
+.ferris-small-spoke:nth-of-type(4) {
+    transform: rotate(calc(4 * 12deg));
+}
+.ferris-small-spoke:nth-of-type(5) {
+    transform: rotate(calc(5 * 12deg));
+}
+.ferris-small-spoke:nth-of-type(6) {
+    transform: rotate(calc(6 * 12deg));
+}
+.ferris-small-spoke:nth-of-type(7) {
+    transform: rotate(calc(7 * 12deg));
+}
+.ferris-small-spoke:nth-of-type(8) {
+    transform: rotate(calc(8 * 12deg));
+}
+.ferris-small-spoke:nth-of-type(9) {
+    transform: rotate(calc(9 * 12deg));
+}
+.ferris-small-spoke:nth-of-type(10) {
+    transform: rotate(calc(10 * 12deg));
+}
+.ferris-small-spoke:nth-of-type(11) {
+    transform: rotate(calc(11 * 12deg));
+}
+.ferris-small-spoke:nth-of-type(12) {
+    transform: rotate(calc(12 * 12deg));
+}
+.ferris-small-spoke:nth-of-type(13) {
+    transform: rotate(calc(13 * 12deg));
+}
+.ferris-small-spoke:nth-of-type(14) {
+    transform: rotate(calc(14 * 12deg));
+}
+.ferris-small-spoke:nth-of-type(15) {
+    transform: rotate(calc(15 * 12deg));
+}
+.ferris-small-spoke:nth-of-type(16) {
+    transform: rotate(calc(16 * 12deg));
+}
+.ferris-small-spoke:nth-of-type(17) {
+    transform: rotate(calc(17 * 12deg));
+}
+.ferris-small-spoke:nth-of-type(18) {
+    transform: rotate(calc(18 * 12deg));
+}
+.ferris-small-spoke:nth-of-type(19) {
+    transform: rotate(calc(19 * 12deg));
+}
+.ferris-small-spoke:nth-of-type(20) {
+    transform: rotate(calc(20 * 12deg));
+}
+.ferris-small-spoke:nth-of-type(21) {
+    transform: rotate(calc(21 * 12deg));
+}
+.ferris-small-spoke:nth-of-type(22) {
+    transform: rotate(calc(22 * 12deg));
+}
+.ferris-small-spoke:nth-of-type(23) {
+    transform: rotate(calc(23 * 12deg));
+}
+.ferris-small-spoke:nth-of-type(24) {
+    transform: rotate(calc(24 * 12deg));
+}
+.ferris-small-spoke:nth-of-type(25) {
+    transform: rotate(calc(25 * 12deg));
+}
+.ferris-small-spoke:nth-of-type(26) {
+    transform: rotate(calc(26 * 12deg));
+}
+.ferris-small-spoke:nth-of-type(27) {
+    transform: rotate(calc(27 * 12deg));
+}
+.ferris-small-spoke:nth-of-type(28) {
+    transform: rotate(calc(28 * 12deg));
+}
+.ferris-small-spoke:nth-of-type(29) {
+    transform: rotate(calc(29 * 12deg));
+}
+.ferris-small-spoke:nth-of-type(30) {
+    transform: rotate(calc(30 * 12deg));
+}
+.ferris-small-spoke-part {
+    position: absolute;
+    transform-origin: center 0;
+    width: 1px;
+    height: 150px;
+    background-color: rgba(241, 106, 131, 0.3);
+}
+.ferris-small-spoke-part-left {
+    transform: rotate(7deg);
+}
+.ferris-small-spoke-part-right {
+    transform: rotate(-7deg);
+}
+.ferris-inner-spinner-axle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    
+    width: 100px;
+    height: 100px;
+    border-top: 25px solid #FAF4A8;
+    border-right: 25px solid #C6C49E;
+    border-bottom: 25px solid #C6C49E;
+    border-left: 25px solid #FAF4A8;
+    border-radius: 50%;
+}
+
+@keyframes outer-spinner {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes cabin {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
