@@ -1,0 +1,120 @@
+/* Tent */
+
+.tent {
+    position: absolute;
+    bottom: 0;
+    left: 300px;
+
+    width: 182px;
+    height: 160px;
+    border: 1px solid #F69EAC;
+}
+.tent-1 {
+    position: absolute;
+    bottom: 0;
+
+    width: 90px;
+    border-bottom: 90px solid #F69EAC;
+    border-left: 10px solid transparent;
+}
+.tent-2 {
+    position: absolute;
+    bottom: 0;
+    left: 90px;
+
+    width: 90px;
+    border-bottom: 90px solid #C38F98;
+    border-right: 10px solid transparent;
+}
+.tent-door-1 {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    transform-origin: 100% 100%;
+    transform: scaleX(.3);
+
+    width: 70px;
+    height: 70px;
+    border-radius: 70px 0 0 0;
+
+    background-color: #816872;
+}
+.tent-door-2 {
+    position: absolute;
+    bottom: 0;
+    left: 90px;
+    transform-origin: 0;
+    transform: scaleX(.3);
+
+    width: 70px;
+    height: 70px;
+    border-radius: 0 70px 0 0;
+
+    background-color: #6D6066;
+}
+.tent-ribbon {
+    position: absolute;
+    bottom: 90px;
+    left: 10px;
+}
+.tent-ribbon-1 {
+    position: relative;
+    top: 10px;
+    float: left;
+    transform-origin: center 0;
+    transform: scaleY(1.2);
+
+    width: 20px;
+    height: 10px;
+    border-radius: 0 0 20px 20px;
+
+    background-color: #816872;
+}
+.tent-top {
+    position: absolute;
+    bottom: 90px;
+    left: 10px;
+}
+.tent-top-1 {
+    position: absolute;
+    bottom: 0;
+
+    border-bottom: 55px solid #F69EAC;
+    border-left: 80px solid transparent;
+}
+.tent-top-2 {
+    position: absolute;
+    bottom: 0;
+    left: 80px;
+
+    border-bottom: 55px solid #C38F98;
+    border-right: 80px solid transparent;
+}
+
+.tent-flag {
+    position: absolute;
+    bottom: 145px;
+    left: 50%;
+
+    width: 16px;
+    height: 10px;
+
+    background-color: #C38F98;
+}
+.tent-flag-1 {
+    position: absolute;
+    right: -7px;
+
+    width: 7px;
+    border-top: 5px solid #C38F98;
+    border-right: 7px solid transparent;
+}
+.tent-flag-2 {
+    position: absolute;
+    top: 5px;
+    right: -5px;
+
+    width: 5px;
+    border-bottom: 5px solid #C38F98;
+    border-right: 5px solid transparent;
+}

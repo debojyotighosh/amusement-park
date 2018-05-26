@@ -1,0 +1,139 @@
+/* Merry-go-round */
+
+.merry {
+    position: absolute;
+    bottom: 0;
+    left: 900px;
+
+    width: 160px;
+    height: 160px;
+    border: 1px solid #C3B0B6;
+}
+
+.merry-base {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    border-bottom: 13px solid #C3B0B6;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}
+.merry-base-right {
+    position: absolute;
+    right: -6px;
+    width: calc(50% + 6px);
+    border-bottom: 13px solid #B29EA7;
+    border-right: 6px solid transparent;
+}
+
+.merry-base-2 {
+    position: absolute;
+    bottom: 13px;
+    left: 6px;
+
+    width: calc(100% - 12px);
+    height: 7px;
+
+    background-color: #8D6876;
+}
+
+.merry-stand {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 17px;
+    height: 81px;
+
+    background-color: #D4BA5B;
+}
+.merry-stand-stripe {
+    transform: skewY(-20deg);
+
+    width: 100%;
+    height: 6px;
+    margin-top: 6px;
+
+    background-color: #8D6876;
+}
+
+.merry-seats {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 125px;
+    height: 65px;
+}
+.merry-seat {
+    position: relative;
+    display: inline-block;
+
+    width: 20px;
+    height: 60px;
+    margin-right: 15px;
+}
+.merry-seat:last-of-type {
+    margin-right: 0;
+}
+.merry-seat-string {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 1px;
+    height: 60px;
+
+    background: #806871;
+}
+.merry-seat-bench {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    border-bottom: 12px solid #F0BF53;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
+
+.merry-top {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: calc(100% - 20px);
+    border-bottom: 55px solid #C3B0B6;
+    border-right: 69px solid transparent;
+    border-left: 69px solid transparent;
+}
+.merry-top-right {
+    position: absolute;
+    left: 0;
+
+    width: calc(50% - 20px);
+    border-bottom: 55px solid #B29EA7;
+    border-right: 69px solid transparent;
+}
+
+.merry-ribbons {
+    position: absolute;
+    bottom: 100px;
+    left: 10px;
+}
+.merry-ribbon {
+    position: relative;
+    top: 10px;
+    float: left;
+    transform-origin: center 0;
+    transform: scaleY(1.2);
+
+    width: 20px;
+    height: 10px;
+    border-radius: 0 0 20px 20px;
+
+    background-color: #816872;
+}
