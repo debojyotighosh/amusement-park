@@ -1,0 +1,64 @@
+/* Street light */
+
+.light {
+    position: absolute;
+
+    bottom: -3px;
+    left: 50px;
+
+    width: width(25px + 2px);
+    height: 145px;
+    border: 1px solid #F3CA76;
+
+    text-align: center;
+}
+.light>div {
+    margin: 0 auto;
+}
+
+.light-bulb {
+    width: 25px;
+    height: 25px;
+
+    background-color: #FDF387;
+    border-radius: 50%;
+}
+
+.light-bulb-base {
+    width: 15px;
+    height: 4px;
+
+    background-color: #6D6066;
+    border-radius: 2px;
+}
+
+.light-post {
+    width: 3px;
+    height: calc(100% - 25px - 4px - 12px - 18px - 6px);
+
+    background-color: #F3CA76;
+}
+
+.light-post-base {
+    width: 7px;
+    height: 12px;
+
+    background-color: #DBEDD1;
+    border-radius: 2px 2px 0 0;
+}
+
+.light-base-1 {
+    width: 11px;
+    height: 18px;
+
+    background-color: #B59EA7;
+    border-radius: 2px 2px 0 0;
+}
+
+.light-base-2 {
+    width: 15px;
+    height: 6px;
+
+    background-color: #6D6066;
+    border-radius: 2px;
+}
