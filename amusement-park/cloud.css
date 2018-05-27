@@ -8,8 +8,7 @@
 
     width: 200px;
     height: 82px;
-
-    border: 1px solid #C2E4D8;
+    /* border: 1px solid #C2E4D8; */
 
     animation: cloudy infinite ease-out 5s;
 }
@@ -58,7 +57,7 @@
 }
 .cloud-6 {
     position: absolute;
-    right: 76px;
+    right: 77px;
     bottom: 10px;
 
     width: 23px;

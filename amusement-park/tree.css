@@ -7,7 +7,11 @@
 
     width: 170px;
     height: 225px;
-    border: 1px solid #7D8A71;
+    /* border: 1px solid #7D8A71; */
+}
+.tree.tall-tree .foliage {
+    transform-origin: center bottom;
+    transform: scale(0.85, 1.15);
 }
 .foliage {
     position: absolute;

@@ -2,12 +2,12 @@
 
 .hot-air-balloon {
     position: absolute;
-    right: 200px;
-    bottom: 250px;
+    right: 300px;
+    bottom: 300px;
 
     width: calc(120px + 2px);
     height: 185px;
-    border: 1px solid #B29EA7;
+    /* border: 1px solid #B29EA7; */
 
     animation: balloon-hover 5s linear infinite;
 }

@@ -2,13 +2,13 @@
 
 .light {
     position: absolute;
-
     bottom: -3px;
     left: 50px;
+    z-index: 1;
 
-    width: width(25px + 2px);
+    width: calc(25px + 2px);
     height: 145px;
-    border: 1px solid #F3CA76;
+    /* border: 1px solid #F3CA76; */
 
     text-align: center;
 }
