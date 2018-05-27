@@ -17,6 +17,7 @@
 
     font-size: 0;
     background-color: #E8F3E2;
+    background-image: radial-gradient(#E8F3E2, #d8e3d2);
 }
 .set {
     position: relative;
