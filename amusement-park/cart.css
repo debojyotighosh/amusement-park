@@ -1,0 +1,132 @@
+/* Cart */
+
+.cart {
+    position: absolute;
+    bottom: 0;
+    left: 275px;
+
+    width: 46px;
+}
+
+.cart-base {
+    position: absolute;
+    bottom: 7px;
+
+    width: 100%;
+    height: 28px;
+
+    background-color: #C5C072;
+    border-radius: 0 0 5px 5px;
+}
+.cart-base:after {
+    display: block;
+    content: "";
+
+    width: 50%;
+    height: 100%;
+
+    background-color: #FDF164;
+    border-radius: 0 0 0 5px;
+}
+
+.cart-wheel {
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+
+    width: 20px;
+    height: 20px;
+    border: 1px solid #8D6876;
+
+    /* background-color: #8D6876; */
+    border-radius: 50%;
+}
+.cart-wheel.wheel-2 {
+    right: -10px;
+    left: auto;
+}
+.cart-spoke {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 1px;
+    height: 100%;
+
+    background-color: #8D6876;
+}
+.cart-spoke:nth-of-type(2) { transform: translateX(-50%) rotate(30deg); }
+.cart-spoke:nth-of-type(3) { transform: translateX(-50%) rotate(60deg); }
+.cart-spoke:nth-of-type(4) { transform: translateX(-50%) rotate(90deg); }
+.cart-spoke:nth-of-type(5) { transform: translateX(-50%) rotate(120deg); }
+.cart-spoke:nth-of-type(6) { transform: translateX(-50%) rotate(150deg); }
+.cart-axle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 7px;
+    height: 7px;
+
+    background-color: #F0BF53;
+    border-radius: 50%;
+}
+
+.cart.no-top .cart-top {
+    display: none;
+}
+
+.cart-top {
+    position: absolute;
+    bottom: 35px;
+
+    width: 46px;
+}
+.cart-top-bar {
+    width: 5px;
+    height: 22px;
+
+    background-color: #FDF164;
+}
+.cart-top-bar.right {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background-color: #C5C072;
+}
+.cart-top-shed {
+    position: absolute;
+    bottom: 22px;
+    left: -5px;
+
+    width: calc(100% + 10px);
+    border-bottom: 18px solid #B2BEAF;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+}
+.left-shed {
+    position: absolute;
+    left: -7px;
+
+    width: calc(50% + 7px);
+    border-bottom: 18px solid #DBEDD1;
+    border-left: 7px solid transparent;
+}
+.cart-top-ribbons {
+    position: absolute;
+    bottom: 15px;
+    left: -5px;
+
+    width: calc(100% + 10px);
+}
+.cart-top-ribbon {
+    display: inline-block;
+    
+    width: 25%;
+    height: 7px;
+
+    background-color: #8D6876;
+    border-radius: 0 0 7px 7px;
+}

@@ -88,9 +88,6 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-
-    /* width: 26px; */
-    /* height: 20px; */
 }
 
 .tc-counter-pane {
@@ -121,7 +118,7 @@
     transform: translateX(-50%) rotate(-15deg);
     z-index: 1;
 
-    width: 55px;
+    width: 47px;
     height: 24px;
     border: 2px solid #C38F98;
 
@@ -148,7 +145,7 @@
     width: 24px;
 }
 .tch-ribbons.ribbons-2 {
-    left: 31px;
+    left: 23px;
     transform: rotate(-90deg) scaleY(-1);
 }
 .tch-ribbon {
